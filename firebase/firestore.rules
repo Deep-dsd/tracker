@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // V1: Open for development (single-user app)
+    // TODO: Add authentication before multi-user deployment
+    match /sessions/{sessionId} {
+      allow read, write: if true;
+    }
+  }
+}

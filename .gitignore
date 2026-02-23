@@ -1,0 +1,16 @@
+# JS
+node_modules/
+.next/
+.pnpm-store/
+
+# Python
+apps/api/venv/
+__pycache__/
+*.pyc
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
